@@ -12,7 +12,6 @@ class PokemonCard extends React.Component {
 
   togglePokemon = () => {
     if (this.state.image === this.props.pokemon.sprites.front) {
-      console.log("i'm here");
       this.setState({
         image: this.props.pokemon.sprites.back
       });
@@ -22,9 +21,7 @@ class PokemonCard extends React.Component {
       });
     }
   };
-
   render() {
-    console.log(this.state.image);
     return (
       <Card>
         <div onClick={this.togglePokemon}>

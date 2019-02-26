@@ -7,7 +7,6 @@ import _ from "lodash";
 class PokemonPage extends React.Component {
   constructor() {
     super();
-
     this.state = {
       pokemons: []
     };
@@ -22,9 +21,7 @@ class PokemonPage extends React.Component {
         })
       );
   }
-
   render() {
-    console.log(this.state.pokemons);
     return (
       <div>
         <h1>Pokemon Searcher</h1>
